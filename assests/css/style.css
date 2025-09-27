@@ -1,0 +1,216 @@
+/* style.css - Fichier principal */
+:root {
+    --primary-red: #8B0000;
+    --secondary-gold: #D4AF37;
+    --accent-brown: #8b4513;
+    --dark-red: #420101;
+    --light-red: #FF6B6B;
+    --dark-bg: #1a1a1a;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+    --red:#420101;
+    --text-dark:#333333;
+    --text-light:#666666;
+    --black-pure:#000000;
+    --gray-light: #f5f5f5;
+    --border-light: #e0e0e0;
+
+    --transition: all 0.3s ease;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+     overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header{
+    padding: 10px;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    position:fixed;
+    width:100%;
+    top: 0px;
+    z-index: 1000;
+    transition: var(--transition);
+}
+.header .scrolled{
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+}
+/*
+.tittle{
+    margin: 10px;
+   padding: 15px;
+   width: 280px;
+}
+.tittle h1{
+    color:var(--red);
+}
+.header .log{
+    margin-top: 10px;
+    width: 50%;
+    display:flex;
+    height:150px;
+}
+.header .log .img {
+    width: 100px;
+    height: 90px;
+    margin-top: 10px;
+    /*border: 1px solid black;
+
+}
+.header .log .img img{
+    width: 100px;
+    height: 90px;
+    border-radius:50%;
+}
+.items{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: -90px;
+    margin-left: 150px;
+    
+    }
+    .nav-menu{
+        width:100%;
+        display: flex;
+        flex: wrap;
+    }
+    ul{
+        list-style: none;
+        padding: 20px;
+        
+    }
+    li{
+        padding: 10px;
+        box-shadow: 0px 2px rgba(255, 255, 255,0.5);
+    }
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: #2c2c2c;
+    }
+    a:hover{
+        color: var(--accent-color);
+        padding: 2px;
+        
+    }
+    .nav-menu{
+        margin-left: 200px;
+    }
+    .nav-bar{
+     display: flex;
+     width: 1400px;
+     justify-content: center;
+     justify-items: center;
+     border: 1px solid black;
+    }
+    .img1{
+      width: 50%;
+      padding: 60px;
+
+    }
+    .nav-bar .img1 img{
+        width: 500px;
+        
+     }
+     .text .titres1 h1{
+        margin-top: 10px;
+        font-size:30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+     }
+    .text{
+      width: 50%;
+      padding: 10px; 
+      margin-top: 20px; 
+     }
+     
+    .section button{
+        background-color:#420101;
+        margin: 10px;
+     
+        padding: 20px;
+        box-shadow: inset -2px 0px chocolate;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        font-size: 20px;
+        color: aliceblue;
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+    }
+    .combien1{
+        display: flex;
+    }
+    .combien1 .img4{
+        background-color: #D4AF37;
+        width: 102px;
+        border-radius: 50%;
+        transform: translateY(-40%);
+        transform: translateX(30%);
+        text-overflow: none;
+        margin-left: 60px;
+
+    }
+    .combien1 .img4 p{
+        text-align: center;
+        padding-top: 30px;
+        font-size: 30px;
+        overflow-x: hidden;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        font-style: unset;
+        color: #ffffff;
+
+    }
+    
+
+/*
+section {
+    padding: 5rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Import des composants */
