@@ -1,0 +1,395 @@
+/* menu.css - Styles spécifiques à la page menu */
+
+/* Page Header */
+.menu-header {
+    background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(66, 1, 1, 0.9)),
+                url('../images/Poulet1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+    padding: 120px 0 80px;
+    margin-top: 110px;
+    height: 500px;
+}
+
+.menu-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-gold);
+}
+
+.menu-header p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+/* Menu Categories Navigation */
+.menu-categories {
+    background: var(--white);
+    padding: 0;
+    border-bottom: 2px solid var(--border-light);
+    position: sticky;
+    top: 110px;
+    z-index: 100;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0;
+}
+
+.category-tab {
+    background: var(--light-bg);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-dark);
+    margin: 10px 5px;
+}
+
+.category-tab:hover {
+    background: var(--primary-red);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: var(--primary-red);
+    color: var(--white);
+}
+
+.category-tab i {
+    font-size: 1.1rem;
+}
+
+/* Menu Content */
+.menu-content {
+    padding: 60px 0;
+    background: var(--light-bg);
+}
+
+.menu-category {
+    display: none;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.menu-category.active {
+    display: block;
+}
+
+.category-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-red);
+    margin-bottom: 10px;
+}
+
+.category-description {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Menu Items Grid */
+.menu-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.item-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.menu-item:hover .item-image img {
+    transform: scale(1.1);
+}
+
+.item-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--secondary-gold);
+    color: var(--white);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.item-content {
+    padding: 25px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.item-header h3 {
+    color: var(--primary-red);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    flex: 1;
+}
+
+.item-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-red);
+    margin-left: 15px;
+}
+
+.item-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.item-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: var(--light-bg);
+    color: var(--text-dark);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.tag-veggie {
+    background: #4CAF50;
+    color: var(--white);
+}
+
+.tag-spicy {
+    background: #FF6B6B;
+    color: var(--white);
+}
+
+/* Item Details & Options */
+.item-details {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-light);
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.item-options {
+    margin-top: 15px;
+}
+
+.item-options h4 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.options-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.option {
+    background: var(--light-bg);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+/* Sides Section */
+.sides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.side-item {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.side-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.side-content h3 {
+    color: var(--primary-red);
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.side-content p {
+    color: var(--text-light);
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.side-price {
+    font-weight: bold;
+    color: var(--primary-red);
+    font-size: 1.1rem;
+}
+
+/* Sauces Section */
+.sauces-section {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.sauces-section h3 {
+    color: var(--primary-red);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sauces-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.sauce-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.sauce-item:last-child {
+    border-bottom: none;
+}
+
+/* Drinks Section */
+.drinks-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.drinks-section h3 {
+    color: var(--primary-red);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--secondary-gold);
+    padding-bottom: 10px;
+}
+
+.drinks-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.drink-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.drink-item:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.drink-info h4 {
+    color: var(--text-dark);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.drink-info p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.drink-price {
+    font-weight: bold;
+    color: var(--primary-red);
+    font-size: 1.2rem;
+}
+
+/* CTA Section */
+.menu-cta {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-gold);
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-buttons

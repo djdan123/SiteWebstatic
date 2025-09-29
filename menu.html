@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Drunken Chicken</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-img">
+                        <img src="assests/images/logo.jpg" alt="The Drunken Chicken">
+                    </div>
+                    <div class="logo-title">
+                        <h1>The Drunken Chicken</h1>
+                        <span>Restaurant & Bar</span>
+                    </div>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> À propos</a></li>
+                        <li><a href="menu.html" class="active"><i class="fas fa-utensils"></i> Menu</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images"></i> Galerie</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="reservation.html" class="reservation-btn"><i class="fas fa-calendar-check"></i> Réserver</a></li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header menu-header">
+        <div class="container">
+            <h1>Notre Menu</h1>
+            <p>Découvrez nos délicieuses créations culinaires</p>
+        </div>
+    </section>
+
+    <!-- Menu Navigation -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="burgers">
+                    <i class="fas fa-hamburger"></i>
+                    Burgers
+                </button>
+                <button class="category-tab" data-category="chicken">
+                    <i class="fas fa-drumstick-bite"></i>
+                    Poulet Frit
+                </button>
+                <button class="category-tab" data-category="starters">
+                    <i class="fas fa-apple-alt"></i>
+                    Entrées
+                </button>
+                <button class="category-tab" data-category="sides">
+                    <i class="fas fa-french-fries"></i>
+                    Accompagnements
+                </button>
+                <button class="category-tab" data-category="desserts">
+                    <i class="fas fa-ice-cream"></i>
+                    Desserts
+                </button>
+                <button class="category-tab" data-category="drinks">
+                    <i class="fas fa-beer"></i>
+                    Boissons
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Content -->
+    <section class="menu-content">
+        <div class="container">
+            
+            <!-- Burgers Category -->
+            <div class="menu-category active" id="burgers">
+                <h2 class="category-title">Nos Poulet</h2>
+                <p class="category-description">Tous nos poulet sont servis avec frites maison et salade</p>
+                
+                <div class="menu-items-grid">
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assests/images/burger-classic.jpg" alt="Classic Burger">
+                            <div class="item-badge">Best Seller</div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Classic Burger</h3>
+                                <span class="item-price">14.90€</span>
+                            </div>
+                            <p class="item-description">Steak haché 180g, cheddar, laitue, tomate, oignon, cornichon, sauce maison</p>
+                            <div class="item-tags">
+                                <span class="tag">Bœuf</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/burger-bbq.jpg" alt="BBQ Bacon Burger">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>BBQ Bacon Burger</h3>
+                                <span class="item-price">16.90€</span>
+                            </div>
+                            <p class="item-description">Double steak, bacon croustillant, oignons caramélisés, sauce BBQ, cheddar</p>
+                            <div class="item-tags">
+                                <span class="tag">Bœuf</span>
+                                <span class="tag tag-spicy">Épicé</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/burger-chicken.jpg" alt="Crispy Chicken Burger">
+                            <div class="item-badge">Nouveau</div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Crispy Chicken Burger</h3>
+                                <span class="item-price">15.50€</span>
+                            </div>
+                            <p class="item-description">Poulet croustillant, sauce coleslaw, salade, tomate, mayonnaise au citron</p>
+                            <div class="item-tags">
+                                <span class="tag">Poulet</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/burger-veggie.jpg" alt="Veggie Delight">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Veggie Delight</h3>
+                                <span class="item-price">13.90€</span>
+                            </div>
+                            <p class="item-description">Steak de légumes, avocat, fromage de chèvre, roquette, sauce pesto</p>
+                            <div class="item-tags">
+                                <span class="tag tag-veggie">Végétarien</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/burger-drunken.jpg" alt="Drunken Chicken Special">
+                            <div class="item-badge">Spécialité</div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Drunken Chicken Special</h3>
+                                <span class="item-price">18.50€</span>
+                            </div>
+                            <p class="item-description">Poulet mariné à la bière, bacon, oignons frits, sauce fromagère, salade</p>
+                            <div class="item-tags">
+                                <span class="tag">Poulet</span>
+                                <span class="tag tag-spicy">Épicé</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/burger-double.jpg" alt="Double Trouble">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Double Trouble</h3>
+                                <span class="item-price">19.90€</span>
+                            </div>
+                            <p class="item-description">Double steak, double cheddar, double bacon, sauce spéciale, oignons croustillants</p>
+                            <div class="item-tags">
+                                <span class="tag">Bœuf</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Chicken Category -->
+            <div class="menu-category" id="chicken">
+                <h2 class="category-title">Poulet Frit</h2>
+                <p class="category-description">Notre poulet secret mariné 24h et frit à la perfection</p>
+                
+                <div class="menu-items-grid">
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/chicken-bucket.jpg" alt="Chicken Bucket">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Bucket Familial</h3>
+                                <span class="item-price">24.00€</span>
+                            </div>
+                            <p class="item-description">16 pièces de poulet, 4 sauces au choix, frites et coleslaw</p>
+                            <div class="item-details">
+                                <div class="detail-item">
+                                    <span>Sauce 1:</span>
+                                    <span>Barbecue</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span>Sauce 2:</span>
+                                    <span>Buffalo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/chicken-wings.jpg" alt="Chicken Wings">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Ailes de Poulet</h3>
+                                <span class="item-price">12.90€</span>
+                            </div>
+                            <p class="item-description">10 ailes de poulet croustillantes, sauce au choix</p>
+                            <div class="item-options">
+                                <h4>Choix de sauce:</h4>
+                                <div class="options-list">
+                                    <span class="option">Buffalo</span>
+                                    <span class="option">BBQ</span>
+                                    <span class="option">Miel Moutarde</span>
+                                    <span class="option">Sucrée Épicée</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/chicken-tenders.jpg" alt="Chicken Tenders">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Chicken Tenders</h3>
+                                <span class="item-price">11.90€</span>
+                            </div>
+                            <p class="item-description">8 tenders de poulet panés, servis avec frites et sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/chicken-sandwich.jpg" alt="Chicken Sandwich">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Sandwich Poulet Croustillant</h3>
+                                <span class="item-price">13.50€</span>
+                            </div>
+                            <p class="item-description">Filet de poulet pané, salade, tomate, mayonnaise, pain brioché</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Starters Category -->
+            <div class="menu-category" id="starters">
+                <h2 class="category-title">Entrées</h2>
+                <p class="category-description">Pour commencer en beauté</p>
+                
+                <div class="menu-items-grid">
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/onion-rings.jpg" alt="Onion Rings">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Onion Rings</h3>
+                                <span class="item-price">6.90€</span>
+                            </div>
+                            <p class="item-description">Oignons croustillants panés, sauce barbecue</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/nachos.jpg" alt="Nachos">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Nachos Géants</h3>
+                                <span class="item-price">9.90€</span>
+                            </div>
+                            <p class="item-description">Tortillas chips, fromage fondu, guacamole, salsa, crème fraîche</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/mozzarella-sticks.jpg" alt="Mozzarella Sticks">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Mozzarella Sticks</h3>
+                                <span class="item-price">7.50€</span>
+                            </div>
+                            <p class="item-description">Bâtonnets de mozzarella panés, sauce tomate</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/coleslaw.jpg" alt="Coleslaw">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Coleslaw Maison</h3>
+                                <span class="item-price">5.50€</span>
+                            </div>
+                            <p class="item-description">Salade de chou et carottes, sauce crémeuse</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sides Category -->
+            <div class="menu-category" id="sides">
+                <h2 class="category-title">Accompagnements</h2>
+                
+                <div class="sides-grid">
+                    
+                    <div class="side-item">
+                        <div class="side-content">
+                            <h3>Frites Maison</h3>
+                            <p>Pommes de terre coupées fraîches</p>
+                            <span class="side-price">4.50€</span>
+                        </div>
+                    </div>
+
+                    <div class="side-item">
+                        <div class="side-content">
+                            <h3>Frites Patates Douces</h3>
+                            <p>Avec sauce au choix</p>
+                            <span class="side-price">5.50€</span>
+                        </div>
+                    </div>
+
+                    <div class="side-item">
+                        <div class="side-content">
+                            <h3>Onion Rings</h3>
+                            <p>Oignons panés croustillants</p>
+                            <span class="side-price">5.90€</span>
+                        </div>
+                    </div>
+
+                    <div class="side-item">
+                        <div class="side-content">
+                            <h3>Salade Verte</h3>
+                            <p>Vinaigrette maison</p>
+                            <span class="side-price">4.90€</span>
+                        </div>
+                    </div>
+
+                    <div class="side-item">
+                        <div class="side-content">
+                            <h3>Maïs Grillé</h3>
+                            <p>Beurre et épices</p>
+                            <span class="side-price">4.50€</span>
+                        </div>
+                    </div>
+
+                    <div class="side-item">
+                        <div class="side-content">
+                            <h3>Riz Pilaf</h3>
+                            <p>Aux légumes et herbes</p>
+                            <span class="side-price">4.90€</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="sauces-section">
+                    <h3>Sauces Supplémentaires</h3>
+                    <div class="sauces-grid">
+                        <div class="sauce-item">
+                            <span>Barbecue</span>
+                            <span>1.00€</span>
+                        </div>
+                        <div class="sauce-item">
+                            <span>Buffalo</span>
+                            <span>1.00€</span>
+                        </div>
+                        <div class="sauce-item">
+                            <span>Mayonnaise</span>
+                            <span>1.00€</span>
+                        </div>
+                        <div class="sauce-item">
+                            <span>Ketchup</span>
+                            <span>1.00€</span>
+                        </div>
+                        <div class="sauce-item">
+                            <span>Andalouse</span>
+                            <span>1.00€</span>
+                        </div>
+                        <div class="sauce-item">
+                            <span>Samouraï</span>
+                            <span>1.00€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Category -->
+            <div class="menu-category" id="desserts">
+                <h2 class="category-title">Desserts</h2>
+                
+                <div class="menu-items-grid">
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/brownie.jpg" alt="Brownie">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Brownie Fondant</h3>
+                                <span class="item-price">6.90€</span>
+                            </div>
+                            <p class="item-description">Brownie au chocolat, glace vanille, coulis chocolat</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/cheesecake.jpg" alt="Cheesecake">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Cheesecake New-Yorkais</h3>
+                                <span class="item-price">7.50€</span>
+                            </div>
+                            <p class="item-description">Couverture fruits rouges ou caramel</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/sundae.jpg" alt="Sundae">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Sundae Chocolat</h3>
+                                <span class="item-price">6.50€</span>
+                            </div>
+                            <p class="item-description">Glace vanille, sauce chocolat, noisettes, chantilly</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="assets/images/apple-pie.jpg" alt="Apple Pie">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Apple Pie</h3>
+                                <span class="item-price">6.90€</span>
+                            </div>
+                            <p class="item-description">Tarte aux pommes, glace vanille, caramel</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Drinks Category -->
+            <div class="menu-category" id="drinks">
+                <h2 class="category-title">Boissons</h2>
+                
+                <div class="drinks-sections">
+                    
+                    <!-- Soft Drinks -->
+                    <div class="drinks-section">
+                        <h3>Boissons Fraîches</h3>
+                        <div class="drinks-grid">
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Coca-Cola / Fanta / Sprite</h4>
+                                    <p>33cl</p>
+                                </div>
+                                <span class="drink-price">3.50€</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Eau Plate / Gazeuse</h4>
+                                    <p>50cl</p>
+                                </div>
+                                <span class="drink-price">2.50€</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Jus d'Orange / Pomme</h4>
+                                    <p>25cl</p>
+                                </div>
+                                <span class="drink-price">3.00€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beers -->
+                    <div class="drinks-section">
+                        <h3>Bières</h3>
+                        <div class="drinks-grid">
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Heineken</h4>
+                                    <p>25cl</p>
+                                </div>
+                                <span class="drink-price">4.00€</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Leffe Blonde</h4>
+                                    <p>25cl</p>
+                                </div>
+                                <span class="drink-price">5.00€</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Guinness</h4>
+                                    <p>50cl</p>
+                                </div>
+                                <span class="drink-price">6.50€</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Corona</h4>
+                                    <p>33cl</p>
+                                </div>
+                                <span class="drink-price">5.00€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cocktails -->
+                    <div class="drinks-section">
+                        <h3>Cocktails Signature</h3>
+                        <div class="drinks-grid">
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Drunken Chicken</h4>
+                                    <p>Notre cocktail signature</p>
+                                </div>
+                                <span class="drink-price">9.00€</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Mojito</h4>
+                                    <p>Rhum, menthe, citron vert</p>
+                                </div>
+                                <span class="drink-price">8.50€</span>
+                            </div>
+                            <div class="drink-item">
+                                <div class="drink-info">
+                                    <h4>Margarita</h4>
+                                    <p>Tequila, triple sec, citron</p>
+                                </div>
+                                <span class="drink-price">8.50€</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="menu-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à commander ?</h2>
+                <p>Réservez votre table ou commandez en ligne</p>
+                <div class="cta-buttons">
+                    <a href="reservation.html" class="btn btn-primary">Réserver une table</a>
+                    <a href="#" class="btn btn-secondary">Commander en ligne</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assests/images/logo.jpg" alt="The Drunken Chicken">
+                        <h3>The Drunken Chicken</h3>
+                    </div>
+                    <p>Le meilleur restaurant burger et poulet frit de la ville. Des ingrédients frais, des recettes uniques et une ambiance conviviale.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">DrunkenC & Details</a></li>
+                        <li><a href="menu.html">Notre Menu</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Horaires d'Ouverture</h4>
+                    <div class="opening-hours">
+                        <div class="hour-item">
+                            <span>Lun - Jeu</span>
+                            <span>11h30 - 22h00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Vendredi</span>
+                            <span>11h30 - 23h00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Samedi</span>
+                            <span>12h00 - 23h00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Dimanche</span>
+                            <span>12h00 - 21h00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Avenue du Burger, 75001 Paris</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 1 42 60 80 90</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@drunkenchicken.fr</span>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Newsletter</h5>
+                        <p>Recevez nos offres spéciales</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Votre email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Drunken Chicken. Tous droits réservés.</p>
+                    <div class="footer-links">
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Conditions générales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+</html>
