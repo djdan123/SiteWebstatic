@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - The Drunken Chicken</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/reservations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-img">
+                        <img src="assets/images/logo.jpg" alt="The Drunken Chicken">
+                    </div>
+                    <div class="logo-title">
+                        <h1>The Drunken Chicken</h1>
+                        <span>Restaurant & Bar</span>
+                    </div>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> À propos</a></li>
+                        <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images"></i> Galerie</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="reservation.html" class="active reservation-btn"><i class="fas fa-calendar-check"></i> Réserver</a></li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header reservation-header">
+        <div class="container">
+            <h1>Réserver une table</h1>
+            <p>Garantissez votre place dans notre restaurant</p>
+        </div>
+    </section>
+
+    <!-- Reservation Process -->
+    <section class="reservation-process">
+        <div class="container">
+            <div class="process-steps">
+                <div class="process-step active">
+                    <div class="step-number">1</div>
+                    <div class="step-info">
+                        <h3>Détails</h3>
+                        <p>Informations de réservation</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-info">
+                        <h3>Confirmation</h3>
+                        <p>Vérification des détails</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-info">
+                        <h3>Finalisé</h3>
+                        <p>Réservation confirmée</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Main -->
+    <section class="reservation-main">
+        <div class="container">
+            <div class="reservation-content">
+                
+                <!-- Reservation Form -->
+                <div class="reservation-form-section">
+                    <h2>Nouvelle Réservation</h2>
+                    <p class="form-description">Remplissez le formulaire ci-dessous pour réserver votre table</p>
+                    
+                    <form class="reservation-form" id="reservationForm">
+                        <!-- Step 1: Reservation Details -->
+                        <div class="form-step active" id="step1">
+                            <h3>Détails de la réservation</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="reservation-date">Date *</label>
+                                    <div class="date-input-container">
+                                        <input type="date" id="reservation-date" name="reservation-date" required min="">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <span class="error-message"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="reservation-time">Heure *</label>
+                                    <select id="reservation-time" name="reservation-time" required>
+                                        <option value="">Choisissez une heure</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+                                        <option value="21:30">21:30</option>
+                                    </select>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="guests">Nombre de personnes *</label>
+                                    <select id="guests" name="guests" required>
+                                        <option value="">Nombre de convives</option>
+                                        <option value="1">1 personne</option>
+                                        <option value="2">2 personnes</option>
+                                        <option value="3">3 personnes</option>
+                                        <option value="4">4 personnes</option>
+                                        <option value="5">5 personnes</option>
+                                        <option value="6">6 personnes</option>
+                                        <option value="7">7 personnes</option>
+                                        <option value="8">8 personnes</option>
+                                        <option value="9">9 personnes</option>
+                                        <option value="10">10 personnes</option>
+                                        <option value="11">11-15 personnes</option>
+                                        <option value="16">16-20 personnes</option>
+                                        <option value="21">Plus de 20 personnes</option>
+                                    </select>
+                                    <span class="error-message"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="occasion">Occasion</label>
+                                    <select id="occasion" name="occasion">
+                                        <option value="">Occasion spéciale</option>
+                                        <option value="none">Sans occasion particulière</option>
+                                        <option value="anniversary">Anniversaire</option>
+                                        <option value="birthday">Fête d'anniversaire</option>
+                                        <option value="date">Rendez-vous</option>
+                                        <option value="business">Dîner d'affaires</option>
+                                        <option value="family">Repas en famille</option>
+                                        <option value="celebration">Célébration</option>
+                                        <option value="other">Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="special-requests">Demandes spéciales</label>
+                                <textarea id="special-requests" name="special-requests" rows="3" placeholder="Allergies, préférences, arrangements spéciaux..."></textarea>
+                                <small class="help-text">Nous ferons de notre mieux pour répondre à vos demandes</small>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-next" data-next="step2">
+                                    Continuer
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2: Personal Information -->
+                        <div class="form-step" id="step2">
+                            <h3>Informations personnelles</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">Prénom *</label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                    <span class="error-message"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="last-name">Nom *</label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="error-message"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Téléphone *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="newsletter" class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                                    <span class="checkmark"></span>
+                                    Je souhaite recevoir la newsletter et les offres spéciales
+                                </label>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline btn-prev" data-prev="step1">
+                                    <i class="fas fa-arrow-left"></i>
+                                    Retour
+                                </button>
+                                <button type="button" class="btn btn-next" data-next="step3">
+                                    Continuer
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 3: Confirmation -->
+                        <div class="form-step" id="step3">
+                            <h3>Confirmation</h3>
+                            
+                            <div class="confirmation-summary">
+                                <div class="summary-item">
+                                    <strong>Date:</strong>
+                                    <span id="summary-date">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <strong>Heure:</strong>
+                                    <span id="summary-time">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <strong>Personnes:</strong>
+                                    <span id="summary-guests">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <strong>Occasion:</strong>
+                                    <span id="summary-occasion">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <strong>Nom:</strong>
+                                    <span id="summary-name">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <strong>Contact:</strong>
+                                    <span id="summary-contact">-</span>
+                                </div>
+                                <div class="summary-item full-width">
+                                    <strong>Demandes spéciales:</strong>
+                                    <span id="summary-requests">Aucune</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="terms" class="checkbox-label">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <span class="checkmark"></span>
+                                    J'accepte les conditions générales et la politique d'annulation *
+                                </label>
+                                <span class="error-message"></span>
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-outline btn-prev" data-prev="step2">
+                                    <i class="fas fa-arrow-left"></i>
+                                    Retour
+                                </button>
+                                <button type="submit" class="btn btn-primary submit-btn">
+                                    <i class="fas fa-check-circle"></i>
+                                    Confirmer la réservation
+                                    <div class="loading-spinner"></div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Success Message -->
+                        <div class="form-success" id="formSuccess">
+                            <div class="success-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Réservation confirmée !</h3>
+                            <p>Votre table a été réservée avec succès. Vous recevrez un email de confirmation dans quelques minutes.</p>
+                            <div class="reservation-details">
+                                <div class="detail-item">
+                                    <strong>Numéro de réservation:</strong>
+                                    <span id="reservation-number">DC-2024-001</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Date:</strong>
+                                    <span id="confirmed-date">-</span>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Heure:</strong>
+                                    <span id="confirmed-time">-</span>
+                                </div>
+                            </div>
+                            <div class="success-actions">
+                                <a href="index.html" class="btn btn-primary">
+                                    <i class="fas fa-home"></i>
+                                    Retour à l'accueil
+                                </a>
+                                <button type="button" class="btn btn-outline" id="newReservationBtn">
+                                    <i class="fas fa-plus"></i>
+                                    Nouvelle réservation
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Reservation Sidebar -->
+                <div class="reservation-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Informations importantes</h3>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="info-content">
+                                <h4>Horaires d'ouverture</h4>
+                                <p>Lun-Jeu: 11h30-22h<br>Ven-Sam: 11h30-23h<br>Dim: 12h-21h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <div class="info-content">
+                                <h4>Groupes importants</h4>
+                                <p>Pour les groupes de plus de 8 personnes, contactez-nous directement au <strong>+33 1 42 60 80 90</strong></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-utensils"></i>
+                            <div class="info-content">
+                                <h4>Service</h4>
+                                <p>Nous conservons votre table pendant 15 minutes après l'heure réservée</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-ban"></i>
+                            <div class="info-content">
+                                <h4>Annulation</h4>
+                                <p>Annulation gratuite jusqu'à 2 heures avant l'heure de réservation</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Événements à venir</h3>
+                        
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Déc</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Soirée Burger Gourmet</h4>
+                                <p>Dégustation de nos nouveaux burgers signature</p>
+                            </div>
+                        </div>
+                        
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">24</span>
+                                <span class="month">Déc</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Menu de Noël</h4>
+                                <p>Menu spécial fêtes disponible</p>
+                            </div>
+                        </div>
+                        
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">31</span>
+                                <span class="month">Déc</span>
+                            </div>
+                            <div class="event-info">
+                                <h4>Réveillon du Nouvel An</h4>
+                                <p>Réservation obligatoire - Places limitées</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-card contact-card">
+                        <h3>Besoin d'aide ?</h3>
+                        <p>Contactez-nous directement pour toute question</p>
+                        <div class="contact-actions">
+                            <a href="tel:+33142608090" class="btn btn-outline">
+                                <i class="fas fa-phone"></i>
+                                Appeler
+                            </a>
+                            <a href="contact.html" class="btn btn-outline">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Availability Calendar -->
+    <section class="availability-section">
+        <div class="container">
+            <h2 class="section-title">Disponibilités populaires</h2>
+            
+            <div class="availability-grid">
+                <div class="availability-card">
+                    <div class="availability-date">
+                        <span class="day">Aujourd'hui</span>
+                        <span class="date">14 Déc</span>
+                    </div>
+                    <div class="availability-slots">
+                        <span class="slot available">19:00</span>
+                        <span class="slot available">19:30</span>
+                        <span class="slot limited">20:00</span>
+                        <span class="slot limited">20:30</span>
+                        <span class="slot full">21:00</span>
+                    </div>
+                </div>
+                
+                <div class="availability-card">
+                    <div class="availability-date">
+                        <span class="day">Demain</span>
+                        <span class="date">15 Déc</span>
+                    </div>
+                    <div class="availability-slots">
+                        <span class="slot available">19:00</span>
+                        <span class="slot available">19:30</span>
+                        <span class="slot available">20:00</span>
+                        <span class="slot limited">20:30</span>
+                        <span class="slot limited">21:00</span>
+                    </div>
+                </div>
+                
+                <div class="availability-card">
+                    <div class="availability-date">
+                        <span class="day">Samedi</span>
+                        <span class="date">16 Déc</span>
+                    </div>
+                    <div class="availability-slots">
+                        <span class="slot limited">19:00</span>
+                        <span class="slot limited">19:30</span>
+                        <span class="slot full">20:00</span>
+                        <span class="slot full">20:30</span>
+                        <span class="slot full">21:00</span>
+                    </div>
+                </div>
+                
+                <div class="availability-card">
+                    <div class="availability-date">
+                        <span class="day">Dimanche</span>
+                        <span class="date">17 Déc</span>
+                    </div>
+                    <div class="availability-slots">
+                        <span class="slot available">12:00</span>
+                        <span class="slot available">12:30</span>
+                        <span class="slot available">13:00</span>
+                        <span class="slot available">19:00</span>
+                        <span class="slot available">19:30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+ <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assests/images/logo.jpg" alt="The Drunken Chicken">
+                        <h3>The Drunken Chicken</h3>
+                    </div>
+                    <p>Le meilleur restaurant burger et poulet frit de la ville. Des ingrédients frais, des recettes uniques et une ambiance conviviale.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">DrunkenC & Details</a></li>
+                        <li><a href="menu.html">Notre Menu</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Horaires d'Ouverture</h4>
+                    <div class="opening-hours">
+                        <div class="hour-item">
+                            <span>Lun - Jeu</span>
+                            <span>11h30 - 22h00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Vendredi</span>
+                            <span>11h30 - 23h00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Samedi</span>
+                            <span>12h00 - 23h00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Dimanche</span>
+                            <span>12h00 - 21h00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Avenue du Burger, 75001 Paris</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 1 42 60 80 90</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@drunkenchicken.fr</span>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Newsletter</h5>
+                        <p>Recevez nos offres spéciales</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Votre email">
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 The Drunken Chicken. Tous droits réservés.</p>
+                    <div class="footer-links">
+                        <a href="#">Mentions légales</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Conditions générales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assests/js/script.js"></script>
+    <script src="assests/js/reservation.js"></script>
+</body>
+</html>

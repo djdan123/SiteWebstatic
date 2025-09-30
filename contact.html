@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Drunken Chicken</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-img">
+                        <img src="assets/images/logo.jpg" alt="The Drunken Chicken">
+                    </div>
+                    <div class="logo-title">
+                        <h1>The Drunken Chicken</h1>
+                        <span>Restaurant & Bar</span>
+                    </div>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> À propos</a></li>
+                        <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                        <li><a href="gallery.html"><i class="fas fa-images"></i> Galerie</a></li>
+                        <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                        <li><a href="reservation.html" class="reservation-btn"><i class="fas fa-calendar-check"></i> Réserver</a></li>
+                    </ul>
+                </nav>
+
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header contact-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes à votre écoute pour toute question ou réservation</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Adresse</h3>
+                    <p>123 Avenue du Burger<br>75001 Paris, France</p>
+                    <a href="#map" class="contact-link">Voir sur la carte</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Téléphone</h3>
+                    <p>+33 1 42 60 80 90</p>
+                    <small>Lun-Dim, 11h-23h</small>
+                    <a href="tel:+33142608090" class="contact-link">Appeler maintenant</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>info@drunkenchicken.fr</p>
+                    <small>Réponse sous 24h</small>
+                    <a href="mailto:info@drunkenchicken.fr" class="contact-link">Envoyer un email</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horaires</h3>
+                    <div class="opening-hours">
+                        <div class="hour-item">
+                            <span>Lundi - Jeudi</span>
+                            <span>11h30 - 22h00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Vendredi - Samedi</span>
+                            <span>11h30 - 23h00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Dimanche</span>
+                            <span>12h00 - 21h00</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Map -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-content">
+                
+                <div class="contact-form-section">
+                    <h2>Envoyez-nous un message</h2>
+                    <p class="form-description">Nous vous répondrons dans les plus brefs délais</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Sujet *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Choisissez un sujet</option>
+                                    <option value="reservation">Réservation</option>
+                                    <option value="information">Demande d'information</option>
+                                    <option value="complaint">Réclamation</option>
+                                    <option value="partnership">Partenariat</option>
+                                    <option value="employment">Emploi</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                                <span class="error-message"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Décrivez votre demande en détail..." required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" checked>
+                                <span class="checkmark"></span>
+                                Je souhaite recevoir la newsletter et les offres spéciales
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                J'accepte la politique de confidentialité *
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Envoyer le message
+                            <div class="loading-spinner"></div>
+                        </button>
+                        
+                        <div class="form-success" id="formSuccess">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Message envoyé avec succès !</h3>
+                            <p>Nous vous répondrons dans les plus brefs délais.</p>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="map-section" id="map">
+                    <h2>Nous trouver</h2>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Carte Interactive</h3>
+                            <p>123 Avenue du Burger, 75001 Paris</p>
+                            <div class="map-actions">
+                                <a href="https://maps.google.com/?q=123+Avenue+du+Burger,75001+Paris" target="_blank" class="btn btn-outline">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Ouvrir dans Google Maps
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.292292615674389!3d48.85837007928746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1620000000000!5m2!1sfr!2sfr" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                        -->
+                    </div>
+                    
+                    <div class="transport-info">
+                        <h4>Accès & Transports</h4>
+                        <div class="transport-options">
+                            <div class="transport-option">
+                                <i class="fas fa-subway"></i>
+                                <div class="transport-details">
+                                    <strong>Métro</strong>
+                                    <span>Ligne 1 - Louvre Rivoli</span>
+                                    <span>Ligne 7 - Pont Neuf</span>
+                                </div>
+                            </div>
+                            <div class="transport-option">
+                                <i class="fas fa-bus"></i>
+                                <div class="transport-details">
+                                    <strong>Bus</strong>
+                                    <span>Lignes 21, 27, 29, 95</span>
+                                    <span>Arrêt: Louvre Rivoli</span>
+                                </div>
+                            </div>
+                            <div class="transport-option">
+                                <i class="fas fa-bicycle"></i>
+                                <div class="transport-details">
+                                    <strong>Vélib'</strong>
+                                    <span>Station n°1001</span>
+                                    <span>20 places disponibles</span>
+                                </div>
+                            </div>
+                            <div class="transport-option">
+                                <i class="fas fa-parking"></i>
+                                <div class="transport-details">
+                                    <strong>Parking</strong>
+                                    <span>Q-Park Louvre</span>
+                                    <span>24h/24 - 300 places</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            <p class="section-subtitle">Trouvez rapidement des réponses à vos questions</p>
+            
+            <div class="faq-grid">
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Faites-vous des plats à emporter ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons la vente à emporter du lundi au dimanche aux mêmes horaires que le restaurant. Vous pouvez commander par téléphone au <strong>+33 1 42 60 80 90</strong> ou directement sur place. Les commandes à emporter sont généralement prêtes en 15-20 minutes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Acceptez-vous les cartes de crédit ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous acceptons toutes les cartes de crédit principales (Visa, MasterCard, American Express) ainsi que les paiements en espèces. Nous acceptons également Apple Pay et Google Pay pour plus de commodité.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous des options végétariennes ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument ! Nous avons plusieurs options végétariennes au menu, dont notre burger veggie, des salades gourmandes, et des accompagnements variés. N'hésitez pas à demander à notre serveur pour des adaptations spécifiques.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Est-il nécessaire de réserver ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous recommandons fortement de réserver, surtout le weekend et en soirée. Vous pouvez réserver en ligne via notre page réservation, par téléphone, ou directement en nous contactant via ce formulaire. Pour les groupes de plus de 6 personnes, la réservation est obligatoire.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous un service de livraison ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous travaillons avec plusieurs services de livraison (Uber Eats, Deliveroo, Just Eat) pour vous apporter nos plats à domicile. La zone de livraison couvre tout Paris intra-muros et certaines communes limitrophes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Organisez-vous des événements privés ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous pouvons organiser des événements privés pour des groupes jusqu'à 30 personnes. Contactez-nous directement pour discuter de vos besoins spécifiques (anniversaires, séminaires, fêtes...).</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="emergency-text">
+                    <h3>Urgence / Modification de réservation</h3>
+                    <p>Pour toute modification de réservation le jour même ou en cas d'urgence, contactez-nous directement par téléphone au <strong>+33 1 42 60 80 90</strong></p>
+                </div>
+                <div class="emergency-action">
+                    <a href="tel:+33142608090" class="btn btn-primary">
+                        <i class="fas fa-phone"></i>
+                        Appeler maintenant
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Le même footer que index.html -->
+    </footer>
+
+    <script src="assests/js/script.js"></script>
+    <script src="assests/js/contact.js"></script>
+</body>
+</html>
